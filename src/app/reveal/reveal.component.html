@@ -1,0 +1,132 @@
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <div>
+              <h2 class="r-fit-text">Introduction à Angular</h2>
+              <small class="fragment"
+                ><em>(En repartant depuis le début)</em></small>
+            </div>
+            <div>
+              <img src="/images/angular_gradient.png" height="200" />
+            </div>
+        </section>
+
+        <section>
+            <div>
+              <h2 class="r-fit-text">Retour à l'origine</h2>
+            </div>
+            <div>
+              <small class="fragment" data-fragment-index="1"
+                ><img
+                  src="/images/HTML5_logo_and_wordmark.svg.png"
+                  height="200"
+              /></small>
+
+              <small class="fragment" data-fragment-index="2"
+                ><img src="/images/CSS3_logo_and_wordmark.svg" height="200"
+              /></small>
+              <small class="fragment" data-fragment-index="3"
+                ><img src="/images/JavaScript-logo.png" height="200"
+              /></small>
+            </div>
+            <div>
+              <small class="fragment" data-fragment-index="3"
+                ><img
+                  src="/images/Three-headed-Dragon-meme-33e92f.jpg"
+                  height="300"
+              /></small>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="r-fit-text">HTML + CSS => Le web statique</h2>
+            <div>
+              <img
+                class="fragment"
+                src="/images/Screenshot from 2024-07-06 22-04-33.png"
+              />
+            </div>
+          </section>
+
+          <section>
+            <h2 class="r-fit-text">HTML + CSS + JS => Le web dynamique</h2>
+            <div>
+              @if (showgif) {
+                <img src="/images/giphy.webp"/>
+              } @else {
+                <button (click)="showgif = true">Click me !</button>
+              }
+            </div>
+          </section>
+
+          <section>
+            <h2 class="r-fit-text">HTML + CSS + JS => Le web dynamique</h2>
+            <p class="fragment fade-out">Comment ça marche ?</p>
+            <div class="fragment">
+              <p>
+                Le Document Object Model (DOM)
+                <span class="fragment">
+                  : représentation de la page web sous forme d'arborescence
+                  d'objets</span
+                >
+              </p>
+              <img class="fragment" height="300" src="/images/dom-model.png" />
+            </div>
+          </section>
+
+
+          <section>
+            <pre><code>{{domHtml}}</code></pre>
+          </section>
+          
+
+
+          <section>
+            <h2 class="r-fit-text">HTML + CSS + JS => Le web dynamique</h2>
+            <div class="fragment">
+              <div>
+                Le Javascript
+                <ul>
+                  <li>Récupération et Modification d'éléments du DOM</li>
+                  <li>Interactions Utilisateur</li>
+                  <li>Appels web</li>
+                </ul>
+            </div>
+            </div>
+            <a z href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick1">Exemple</a>
+          </section>
+
+          <section>
+        <h2 class="r-fit-text">Evolution du développement web</h2>
+        <div  #mermaid class="mermaid"></div>
+      </section>
+          
+          
+          
+          
+
+
+
+
+          <section>
+            # Gérer le DOM soit même, c'est lourd :
+               - il se passe quoi si je veux effacer un éléments ? Selon une condition ? l'afficher 10 fois ?
+            # Le javascript, c'est un peu une blague quand même (trinity exemple)
+            => Il faut aujourd'hui utiliser un framework
+            Comparaison Typexcript/Javascript
+
+            - Séparation en composants (montrer capture d'une appli codée)
+            - Typscript
+            - Séparation de la partie logique (Component) et affichage (template + CSS)
+            - Gestion de la Modification du DOM (two-way binding)
+          </section>
+          <section>
+            # Angular ça rapporte quoi
+
+            - Séparation en composants (montrer capture d'une appli codée)
+            - Typscript
+            - Séparation de la partie logique (Component) et affichage (template + CSS)
+            - Gestion de la Modification du DOM (two-way binding)
+          </section>
+        </div>
+    </div>
